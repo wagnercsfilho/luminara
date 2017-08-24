@@ -1,0 +1,243 @@
+* {
+    -webkit-tap-highlight-color: transparent;
+    box-sizing: border-box;
+}
+
+:focus {
+    outline: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'startwars';
+    background-color: #1d1d1d;
+    font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -webkit-touch-callout: none;
+    -webkit-text-size-adjust: none;
+    -webkit-user-select: none;
+    overflow: hidden;
+}
+
+.app-container {}
+
+.page-content {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.toolbar {
+    display: flex;
+    height: 56px;
+    align-items: center;
+    background-color: #020202;
+    color: #ffffff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.toolbar__title {
+    flex: 1;
+    color: #ffffff;
+    font-size: 22px;
+    font-family: 'Cinzel Decorative', cursive;
+}
+
+.toolbar__button {
+    padding: 16px;
+}
+
+.card {
+    margin: 0 auto;
+    max-width: 380px;
+    padding: 16px;
+    position: relative;
+}
+
+.card-loading {
+    position: absolute;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 5000;
+    font-size: 62px;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+    z-index: 5000;
+}
+
+.card-info {
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.card-info_wrapper {
+    height: 300px;
+    position: relative;
+}
+
+.card-info__image {
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-position: center center;
+    background-size: cover;
+    background-image: url('https://ae01.alicdn.com/kf/HTB1qB5XSXXXXXawXpXXq6xXFXXX7/DIY-font-b-frame-b-font-The-Force-Awakens-Movie-font-b-Film-b-font-font.jpg');
+}
+
+.card-info__title {
+    position: absolute;
+    bottom: 0;
+    z-index: 1000;
+    color: white;
+    font-size: 48px;
+    padding: 16px;
+}
+
+.card-info__details {
+    background-color: white;
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-info__details__item {
+    font-size: 12px;
+    padding-right: 8px;
+    flex: 1;
+    text-align: center;
+}
+
+.card-info__details__item__key {
+    font-weight: bold;
+    color: #9e4f60;
+    margin-bottom: 4px;
+}
+
+.card-info__details__item__value {
+    color: #333;
+}
+
+.card-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+    margin: 32px 0;
+}
+
+.card-actions__button {
+    color: #9e4f60;
+    cursor: pointer;
+}
+
+.card-actions__button:active {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.favorites__list {
+    padding: 16px 0;
+}
+
+.favorites__list__item {
+    padding: 8px;
+    border-bottom: 1px solid #373a47;
+}
+
+.favorites__list__item:last-child {
+    border-bottom: none;
+}
+
+.favorites__list__item__name {
+    color: white;
+    font-size: 22px;
+}
+
+
+/* Position and sizing of burger button */
+
+.bm-burger-button {
+    position: fixed;
+    width: 36px;
+    height: 30px;
+    left: 36px;
+    top: 36px;
+}
+
+
+/* Color/shape of burger icon bars */
+
+.bm-burger-bars {
+    background: #373a47;
+}
+
+
+/* Position and sizing of clickable cross button */
+
+.bm-cross-button {
+    height: 24px;
+    width: 24px;
+}
+
+
+/* Color/shape of close button cross */
+
+.bm-cross {
+    background: #bdc3c7;
+}
+
+
+/* General sidebar styles */
+
+.bm-menu {
+    background: #373a47;
+    padding: 2.5em 1.5em 0;
+    font-size: 1.15em;
+}
+
+.bm-menu-wrap {
+    z-index: 6000 !important;
+}
+
+
+/* Morph shape necessary with bubble or elastic */
+
+.bm-morph-shape {
+    fill: #373a47;
+}
+
+
+/* Wrapper for item list */
+
+.bm-item-list {
+    color: #b8b7ad;
+    padding: 0.8em;
+}
+
+
+/* Styling of overlay */
+
+.bm-overlay {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.menu-item {
+    margin-left: 10px;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 8px;
+    text-transform: uppercase;
+}
+
+.menu-item:hover {
+    color: #9e4f60;
+}
